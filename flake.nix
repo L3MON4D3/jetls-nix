@@ -44,8 +44,9 @@
         package = m2nlib.buildJuliaPackageWithDeps { src = with_manifest; lockFile = ./Lock.toml; };
         jetls_env = m2nlib.createEnv { package = package; };
       in {
-        packages = {
+        packages = rec {
           inherit julia;
+          default = jetls;
           # mostly nicked from the default Pkg.App setup from julia.
           jetls = pkgs.writeShellScriptBin "jetls" ''
             export JULIA_LOAD_PATH="${jetls_env.JULIA_LOAD_PATH}:"
