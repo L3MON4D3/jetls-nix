@@ -46,11 +46,29 @@
       in {
         packages = {
           inherit julia;
+          # mostly nicked from the default Pkg.App setup from julia.
           jetls = pkgs.writeShellScriptBin "jetls" ''
             export JULIA_LOAD_PATH="${jetls_env.JULIA_LOAD_PATH}:"
             export JULIA_DEPOT_PATH="$HOME/.julia:${jetls_env.JULIA_DEPOT_PATH}:${m2nlib.stdlibDepot}"
 
-            exec ${julia}/bin/julia -m JETLS "$@"
+            export julia_cmd="${julia}/bin/julia"
+            found_separator=false
+            for a in "$@"; do
+                [ "$a" = "--" ] && { found_separator=true; break; }
+            done
+
+            julia_args=""
+            if [ "$found_separator" = "true" ]; then
+                # Build julia_args until `--`, then leave the rest in "$@"
+                while [ "$#" -gt 0 ]; do
+                    case "$1" in
+                    --) shift; break ;;
+                    *)  julia_args="$julia_args''${julia_args:+ }$1"; shift ;;
+                    esac
+                done
+                # Here: "$@" are the app args after the separator
+            fi
+            exec "$julia_cmd" --startup-file=no --startup-file=no --history-file=no --threads=auto $julia_args -m JETLS "$@"
           '';
           update_manifest = pkgs.writeShellScriptBin "update_manifest" ''
             echo ${jetls_src}
