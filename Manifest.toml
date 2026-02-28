@@ -1,0 +1,362 @@
+# This file is machine-generated - editing it directly is not advised
+
+julia_version = "1.12.5"
+manifest_format = "2.0"
+project_hash = "459bfdf783350806c412dba555fabbe9830c68a5"
+
+[[deps.ArgTools]]
+uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
+version = "1.1.2"
+
+[[deps.Artifacts]]
+uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+version = "1.11.0"
+
+[[deps.Base64]]
+uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+version = "1.11.0"
+
+[[deps.CodeTracking]]
+deps = ["InteractiveUtils", "UUIDs"]
+git-tree-sha1 = "4ce5061cd36c5f79984589ccf4c142015c64e475"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/CodeTracking"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "29b28462-3302-58bb-873a-3f58224955cc"
+version = "3.0.0"
+
+[[deps.Compiler]]
+git-tree-sha1 = "f3e76627a8fabce47031475cace717601c2ca0bb"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/Compiler"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "8499cccf-07fb-5365-ac3a-39ae87615c05"
+version = "0.1.1"
+
+[[deps.CompilerSupportLibraries_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
+version = "1.3.0+1"
+
+[[deps.Configurations]]
+deps = ["ExproniconLite", "OrderedCollections", "TOML"]
+git-tree-sha1 = "794b61b20d6d0400a76109c54fbbda152f5f6a34"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/Configurations"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "0e024541-5ab8-52a1-ab45-c6c348770b4a"
+version = "0.17.6"
+
+[[deps.Dates]]
+deps = ["Printf"]
+uuid = "ade2ca70-3891-5945-98fb-dc099432e06a"
+version = "1.11.0"
+
+[[deps.Downloads]]
+deps = ["ArgTools", "FileWatching", "LibCURL", "NetworkOptions"]
+uuid = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
+version = "1.7.0"
+
+[[deps.ExproniconLite]]
+git-tree-sha1 = "5c890a775fecefc8264d02b8d3d278642999dad6"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/ExproniconLite"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "c4ea0d7b-0a8a-57b2-be88-2cd5ead728ce"
+version = "0.10.14"
+
+[[deps.FileWatching]]
+uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
+version = "1.11.0"
+
+[[deps.Glob]]
+git-tree-sha1 = "2ea78ee8460bdba7b77fd1886a51168551475711"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/Glob"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "a6ef924f-2b2c-5d99-b812-8edbc1441234"
+version = "1.4.0"
+
+[[deps.InteractiveUtils]]
+deps = ["Markdown"]
+uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+version = "1.11.0"
+
+[[deps.JET]]
+deps = ["CodeTracking", "Compiler", "InteractiveUtils", "JuliaInterpreter", "JuliaSyntax", "LoweredCodeUtils", "MacroTools", "Pkg", "PrecompileTools", "Preferences", "Test"]
+git-tree-sha1 = "68ef3e43934ec21d6e2a240cca9f924620a081a6"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/JET"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "d18a8d2a-b6cf-5b35-ae77-db04d04d451d"
+version = "0.10.14"
+weakdeps = ["Revise"]
+
+    [deps.JET.extensions]
+    JETReviseExt = "Revise"
+
+[[deps.JETLS]]
+deps = ["CodeTracking", "Compiler", "Configurations", "ExproniconLite", "Glob", "JET", "JSON3", "JuliaInterpreter", "JuliaLowering", "JuliaSyntax", "LSP", "LoweredCodeUtils", "MacroTools", "Markdown", "OrderedCollections", "Parsers", "Pkg", "PrecompileTools", "Preferences", "Profile", "REPL", "Revise", "Sockets", "StructTypes", "TOML"]
+git-tree-sha1 = "efe65694d4f412d0bc160568fdfe2ddbc8678571"
+repo-rev = "2026-02-27"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "a3b70258-0602-4ee2-b5a6-54c2470400db"
+version = "0.0.0"
+
+[[deps.JSON3]]
+deps = ["Dates", "Mmap", "Parsers", "PrecompileTools", "StructTypes", "UUIDs"]
+git-tree-sha1 = "f46acb6a5ca8f03b9a4cf066cd3e86a127f21e94"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/JSON3"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "00ac8d46-747e-5902-8e12-fdfc767369c7"
+version = "1.14.3"
+
+[[deps.JuliaInterpreter]]
+deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
+git-tree-sha1 = "dfadd780b322992f3604a5c28c544337beecf518"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/JuliaInterpreter"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "87c368a4-672f-5de1-91ff-3cc7fc652fab"
+version = "0.10.9"
+
+[[deps.JuliaLowering]]
+deps = ["JuliaSyntax"]
+git-tree-sha1 = "9085816cec6da69993b740b98d34f4f5b7a1e943"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/JuliaLowering"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "7ba39d99-9390-5ff4-b3a7-c9cea37c1861"
+version = "1.0.0-DEV"
+
+[[deps.JuliaSyntax]]
+git-tree-sha1 = "8ac66fad7cd0b437f57260dde251a9f0ad907455"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/JuliaSyntax"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "02a177f8-2b16-5240-a0b4-02ed40703cda"
+version = "2.0.0-DEV"
+
+[[deps.JuliaSyntaxHighlighting]]
+deps = ["StyledStrings"]
+uuid = "ac6e5ff7-fb65-4e79-a425-ec3bc9c03011"
+version = "1.12.0"
+
+[[deps.LSP]]
+deps = ["JSON3", "PrecompileTools", "StructTypes"]
+git-tree-sha1 = "76b081cfe04b1a1041bd191b43cf489df410e581"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/LSP"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "ba3d5f2d-0240-5843-8ab5-e1c74856c201"
+version = "0.1.0"
+
+[[deps.LibCURL]]
+deps = ["LibCURL_jll", "MozillaCACerts_jll"]
+uuid = "b27032c2-a3e7-50c8-80cd-2d36dbcbfd21"
+version = "0.6.4"
+
+[[deps.LibCURL_jll]]
+deps = ["Artifacts", "LibSSH2_jll", "Libdl", "OpenSSL_jll", "Zlib_jll", "nghttp2_jll"]
+uuid = "deac9b47-8bc7-5906-a0fe-35ac56dc84c0"
+version = "8.15.0+0"
+
+[[deps.LibGit2]]
+deps = ["LibGit2_jll", "NetworkOptions", "Printf", "SHA"]
+uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
+version = "1.11.0"
+
+[[deps.LibGit2_jll]]
+deps = ["Artifacts", "LibSSH2_jll", "Libdl", "OpenSSL_jll"]
+uuid = "e37daf67-58a4-590a-8e99-b0245dd2ffc5"
+version = "1.9.0+0"
+
+[[deps.LibSSH2_jll]]
+deps = ["Artifacts", "Libdl", "OpenSSL_jll"]
+uuid = "29816b5a-b9ab-546f-933c-edad1886dfa8"
+version = "1.11.3+1"
+
+[[deps.Libdl]]
+uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+version = "1.11.0"
+
+[[deps.Logging]]
+uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
+version = "1.11.0"
+
+[[deps.LoweredCodeUtils]]
+deps = ["CodeTracking", "Compiler", "JuliaInterpreter"]
+git-tree-sha1 = "e46cd0a0fdb63da4ab772b363966eaebcddb00a0"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/LoweredCodeUtils"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "01ede001-ea10-5720-9c31-2e53839707a9"
+version = "3.5.1"
+
+[[deps.MacroTools]]
+git-tree-sha1 = "c7fb2bdd6424542225e92d3ed849e85df6422e9f"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/MacroTools"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "73a1cfca-4736-53e3-b924-35a7291c571e"
+version = "0.5.16"
+
+[[deps.Markdown]]
+deps = ["Base64", "JuliaSyntaxHighlighting", "StyledStrings"]
+uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
+version = "1.11.0"
+
+[[deps.Mmap]]
+uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+version = "1.11.0"
+
+[[deps.MozillaCACerts_jll]]
+uuid = "14a3606d-f60d-562e-9121-12d972cd8159"
+version = "2025.11.4"
+
+[[deps.NetworkOptions]]
+uuid = "ca575930-c2e3-43a9-ace4-1e988b2c1908"
+version = "1.3.0"
+
+[[deps.OpenSSL_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
+version = "3.5.4+0"
+
+[[deps.OrderedCollections]]
+git-tree-sha1 = "473795d6caec1f049dcce28738bb7e55fe0153fa"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/OrderedCollections"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "64c61135-0f01-5c34-beb9-07fc02084e85"
+version = "1.8.1"
+
+[[deps.Parsers]]
+deps = ["Dates", "PrecompileTools", "UUIDs"]
+git-tree-sha1 = "b33dc5878bade069223bafae97a4abc5913f96dd"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/Parsers"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "2bf889ff-109e-5fa9-9ba3-339ee07cbe67"
+version = "2.8.3"
+
+[[deps.Pkg]]
+deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "Random", "SHA", "TOML", "Tar", "UUIDs", "p7zip_jll"]
+uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+version = "1.12.1"
+weakdeps = ["REPL"]
+
+    [deps.Pkg.extensions]
+    REPLExt = "REPL"
+
+[[deps.PrecompileTools]]
+deps = ["Preferences"]
+git-tree-sha1 = "838865c64431ab8f7269dd30db89d594dc38d13d"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/PrecompileTools"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "32931bc0-5014-5544-84d5-53636ff9f6c5"
+version = "1.3.3"
+
+[[deps.Preferences]]
+deps = ["TOML"]
+git-tree-sha1 = "09bc64e1b26b773a7b8399a96c6781ab0ee3edd3"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/Preferences"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "cc588e5a-7be0-5224-8a6a-549b21958db9"
+version = "1.5.2"
+
+[[deps.Printf]]
+deps = ["Unicode"]
+uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+version = "1.11.0"
+
+[[deps.Profile]]
+deps = ["StyledStrings"]
+uuid = "9abbd945-dff8-562f-b5e8-e1ebf5ef1b79"
+version = "1.11.0"
+
+[[deps.REPL]]
+deps = ["InteractiveUtils", "JuliaSyntaxHighlighting", "Markdown", "Sockets", "StyledStrings", "Unicode"]
+uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+version = "1.11.0"
+
+[[deps.Random]]
+deps = ["SHA"]
+uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+version = "1.11.0"
+
+[[deps.Revise]]
+deps = ["CodeTracking", "FileWatching", "InteractiveUtils", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "Preferences", "REPL", "UUIDs"]
+git-tree-sha1 = "d39b2836e3ab487d1dd1a9ee40fa3adf0200a6ec"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/Revise"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "d54aa4ff-5f0d-5e64-8d83-7613e0a93f9b"
+version = "3.13.2"
+
+[[deps.SHA]]
+uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+version = "0.7.0"
+
+[[deps.Serialization]]
+uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+version = "1.11.0"
+
+[[deps.Sockets]]
+uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
+version = "1.11.0"
+
+[[deps.StructTypes]]
+deps = ["Dates", "UUIDs"]
+git-tree-sha1 = "97c92d02347898e7d5cd857ed25d228bf8e139f9"
+repo-rev = "f9ccc05f314c3100d9e4379145f33a319224c6c7"
+repo-subdir = "vendor/StructTypes"
+repo-url = "https://github.com/aviatesk/JETLS.jl"
+uuid = "66bcceda-d870-5865-93dd-65803322e79e"
+version = "1.11.0"
+
+[[deps.StyledStrings]]
+uuid = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
+version = "1.11.0"
+
+[[deps.TOML]]
+deps = ["Dates"]
+uuid = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+version = "1.0.3"
+
+[[deps.Tar]]
+deps = ["ArgTools", "SHA"]
+uuid = "a4e569a6-e804-4fa4-b0f3-eef7a1d5b13e"
+version = "1.10.0"
+
+[[deps.Test]]
+deps = ["InteractiveUtils", "Logging", "Random", "Serialization"]
+uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+version = "1.11.0"
+
+[[deps.UUIDs]]
+deps = ["Random", "SHA"]
+uuid = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+version = "1.11.0"
+
+[[deps.Unicode]]
+uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+version = "1.11.0"
+
+[[deps.Zlib_jll]]
+deps = ["Libdl"]
+uuid = "83775a58-1f1d-513f-b197-d71354ab007a"
+version = "1.3.1+2"
+
+[[deps.nghttp2_jll]]
+deps = ["Artifacts", "Libdl"]
+uuid = "8e850ede-7688-5339-a07c-302acd2aaf8d"
+version = "1.64.0+1"
+
+[[deps.p7zip_jll]]
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
+uuid = "3f19e933-33d8-53b3-aaab-bd5110c3b7a0"
+version = "17.7.0+0"
