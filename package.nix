@@ -1,6 +1,8 @@
 {
   lib,
   julia,
+  pkgs,
+  juliaWithPackages ? pkgs.julia-bin.withPackages,
   fetchFromGitHub,
   writeShellApplication,
   runCommand,
@@ -39,7 +41,8 @@ let
     };
 
   resolved =
-    (julia.withPackages.override {
+    # Use the builder from our package set, not the supplied interpreter's.
+    (juliaWithPackages.override {
       inherit julia packageOverrides;
       setDefaultDepot = false;
       juliaCpuTarget = "generic";

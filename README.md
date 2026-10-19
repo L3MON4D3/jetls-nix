@@ -23,15 +23,21 @@ The package is a normal `callPackage` function:
 pkgs.callPackage ./package.nix { julia = pkgs.julia_112-bin; }
 ```
 
-Or use this flake's overlay:
+To keep this flake's pinned nixpkgs for dependency resolution and building while
+using your own Julia interpreter, override the exported package:
 
 ```nix
-pkgs = import nixpkgs {
-  inherit system;
-  overlays = [ jetls-nix.overlays.default ];
+jetls = inputs.jetls-nix.packages.${system}.jetls.override {
+  julia = myJulia;
 };
-jetls = pkgs.jetls.override { julia = pkgs.julia_112-bin; };
 ```
+
+The `withPackages` builder defaults to the one from the package set used to call
+`package.nix`, not the one attached to `myJulia`. The interpreter only needs to
+provide a working `bin/julia`, `version`, and `meta.platforms`; it does not need
+its own `withPackages` attribute. You can explicitly override the builder with
+`juliaWithPackages` if needed. For cache sharing, the supplied interpreter must
+still have the same store path.
 
 The default uses `julia-bin`. JETLS release `2026-10-18` supports Julia
 **1.12.2 through 1.13.x** (as specified by its release `Project.toml`). An
